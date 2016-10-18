@@ -8,7 +8,7 @@
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Martina Kraus">
-
+    <meta charset="utf-8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -242,6 +242,52 @@
             </section>
         </section>
         <section>
+            <section>
+                <h1>CSS-Attribute (Beispiele)</h1>
+            </section>
+            <section>
+                    <h2>Text: Behandlung von Overflow</h2>
+                    <img src="assets/cssTextOverflow.png">
+            </section>
+            <section>
+                    <h2>Text: Formatierung</h2>
+                    <ul>
+                        <li><b>font-family</b> – Liste (kommagetrennt) von Zeichens&auml;tzen (Helvetia, Times New Roman)</li>
+                        <li><b>font-style</b> – Schriftstil (normal, italic (kursiv)</li>
+                        <li><b>font-size</b> – Schriftgr&ouml;&szlig;e</li>
+                        <li><b>color</b> – Textfarbe</li>
+                        <li><b>font-weight</b> – Schrift"gewicht" lighter, normal, bold, bolder</li>
+                        <li><b>text-decoration</b> – Textdekoration (underlinde, overline, line-through, blink (Nein!!)</li>
+                    </ul>
+            </section>
+            <section>
+                    <h2>Anzeigeart mit display</h2>
+                    <ul>
+                        <li><b>none</b> – nichts anzeigen und auch keinen Platz daf&uuml;r freihalten</li>
+                        <li><b>inline</b> – im laufenden Textfluss anzeigen</li>
+                        <li><b>block</b> – nichts anzeigen und auch keinen Platz daf&uuml;r freihalten</li>
+                        <li><b>list-item</b> – wie block, aber mit Aufzählungszeichen davor</li>
+                    </ul>
+            </section>
+            <section>
+                    <h2>Hintergrund</h2>
+                    <ul>
+                        <li><b>background-color</b> – Hintergrundfarbe</li>
+                        <li><b>background-image </b> – Hintergrundbild</li>
+                    </ul>
+                     <h5><b>background-repeat</b> –  Wiederholen des Hintergrundbilds</h5>
+                    <ul>
+                        <li><b>repeat</b> – Hintergrundfarbe</li>
+                        <li><b>repeat-x/y </b> – Wiederholen nur in X/Y-Richtung</li>
+                        <li><b>no-repeat</b> – Keine Wiederholung</li>
+                    </ul>
+            </section>
+            <section>
+                    <h5>List-Styles</h5>
+                    <img src="assets/cssListStyle.png">
+            </section>
+             </section>
+        <section>
              <section>
                 <h1>CSS-Layout</h1>
             </section>
@@ -266,6 +312,30 @@
             </section>
             <section>
                 <h2>Box Model</h2>
+            </section>
+            <section>
+                <h2>Box Model: Margin und Padding</h2>
+                <img src="assets/cssBoxModell.png">
+            </section>
+            <section>
+                <h2>Randangaben</h2>
+                <pre class="css"><code>
+                padding-top: 5px;
+                padding-right: 10px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+
+                /*Kurzform: top, right, bottom, left*/
+                padding: 5px 10px 15px 25px;
+
+                padding-top: 20px;
+                padding-right: 5px;
+                padding-bottom: 20px;
+                padding-left: 5px;
+
+                /*Kurzform: top/ bottom, right/ left*/
+                padding: 20px 5px;
+                </code></pre>
             </section>
             <section>
                 <h2>width, height und z-index</h2>
@@ -294,7 +364,7 @@
             <section>
                 <h2>Relative Position</h2>
                 <p>
-                    Wenn position <code>static</code>  or <code>relative</code>  dann haben Elemente eine Position <code>relativ</code> zu ihrem umgebenden Element. Der &Uuml;bergang von <code>static</code>  zu <code>absolute</code>  or <code>fixed</code>  ist <b>NUR</b>  mit <code>relative</code> m&ouml;glich.
+                    Wenn position <code>static</code>  or <code>relative</code>  dann haben Elemente eine Position <code>relativ</code> zu ihrem umgebenden Element.
                 </p>
             </section>
             <section>
@@ -321,7 +391,7 @@
                 </ul>
             </section>
             <section>
-                <h2>Beispiel: Absolute und Fixed</h2>
+                <h2>Beispiel: z-index</h2>
     <pre class="html"><code>&lt;style&gt;
       div {
         position: absolute;
@@ -344,76 +414,18 @@
                 </ul>
             </section>
             <section>
-                <h2>Box Model: Margin und Padding</h2>
-                <img src="assets/cssBoxModell.png">
+                <h2>CSS3> Flexbox</h2>
             </section>
             <section>
-                <h2>Randangaben</h2>
-                <pre class="css"><code>
-                padding-top: 5px; 
-                padding-right: 10px; 
-                padding-bottom: 15px;
-                padding-left: 25px;
-
-                /*Kurzform: top, right, bottom, left*/
-                padding: 5px 10px 15px 25px;
-
-                padding-top: 20px; 
-                padding-right: 5px; 
-                padding-bottom: 20px;
-                padding-left: 5px;
-
-                /*Kurzform: top/ bottom, right/ left*/
-                padding: 20px 5px;
-                </code></pre>
+                <h2>Flexbox Layout</h2>
+                <ol>
+                    <li>neuer Working Draft f&uuml;r Responsivness von Webseite</li>
+                    <li>Alles wird als flex container und flex items verstanden.</li>
+                    <img src="assets/flex-items.svg">
+                    <img src="assets/flex-container.svg">
+                </ol>
             </section>
     </section>
-    <section>
-        <section>
-            <h1>CSS-Attribute (Beispiele)</h1>
-        </section>
-        <section>
-                <h2>Text: Behandlung von Overflow</h2>
-                <img src="assets/cssTextOverflow.png">
-        </section>
-        <section>
-                <h2>Text: Formatierung</h2>
-                <ul>
-                    <li><b>font-family</b> – Liste (kommagetrennt) von Zeichens&auml;tzen (Helvetia, Times New Roman)</li>
-                    <li><b>font-style</b> – Schriftstil (normal, italic (kursiv)</li>
-                    <li><b>font-size</b> – Schriftgr&ouml;&szlig;e</li>
-                    <li><b>color</b> – Textfarbe</li>
-                    <li><b>font-weight</b> – Schrift"gewicht" lighter, normal, bold, bolder</li>
-                    <li><b>text-decoration</b> – Textdekoration (underlinde, overline, line-through, blink (Nein!!)</li>
-                </ul>
-        </section>
-        <section>
-                <h2>Anzeigeart mit display</h2>
-                <ul>
-                    <li><b>none</b> – nichts anzeigen und auch keinen Platz daf&uuml;r freihalten</li>
-                    <li><b>inline</b> – im laufenden Textfluss anzeigen</li>
-                    <li><b>block</b> – nichts anzeigen und auch keinen Platz daf&uuml;r freihalten</li>
-                    <li><b>list-item</b> – wie block, aber mit Aufzählungszeichen davor</li>
-                </ul>
-        </section>
-        <section>
-                <h2>Hintergrund</h2>
-                <ul>
-                    <li><b>background-color</b> – Hintergrundfarbe</li>
-                    <li><b>background-image </b> – Hintergrundbild</li>
-                </ul>
-                 <h5><b>background-repeat</b> –  Wiederholen des Hintergrundbilds</h5>
-                <ul>
-                    <li><b>repeat</b> – Hintergrundfarbe</li>
-                    <li><b>repeat-x/y </b> – Wiederholen nur in X/Y-Richtung</li>
-                    <li><b>no-repeat</b> – Keine Wiederholung</li>
-                </ul>
-        </section>
-        <section>
-                <h5>List-Styles</h5>
-                <img src="assets/cssListStyle.png">
-        </section>
-         </section>
          <section>
         <section>
                 <h1>Kaskadierung und Vererbung</h1>
@@ -446,7 +458,7 @@
 
 &lt;p id=&quot;hervorhebung&quot; class=&quot;achtung&quot;&gt;Dies soll hervorgehoben werden.&lt;/p&gt;
 &lt;p id=&quot;auch&quot; class=&quot;achtung&quot;&gt;Und das hier auch.&lt;/p&gt;
-&lt;p id=&quot;noch&quot; class=&quot;achtung&quot; style=&quot;color:green&quot;&gt;Dies soll 
+&lt;p id=&quot;noch&quot; class=&quot;achtung&quot; style=&quot;color:green&quot;&gt;Dies soll
 hervorgehoben werden.&lt;/p&gt;</code></pre>
                  </section>
                 <section>
@@ -454,7 +466,7 @@ hervorgehoben werden.&lt;/p&gt;</code></pre>
                 <span>Wenn es für ein Element kein direktes Format gibt, wird das Format des übergeordneten Elements übernommen (Vererbung von Formaten)</span>
                 <ul>
                     <li>Vererbung folgt dem Dokumenten-Baum</li>
-                    <li>Manche Attribute werden nicht vererbt (z. B. text-decoration)/li>
+                    <li>Manche Attribute werden nicht vererbt (z. B. text-decoration)</li>
                 </ul>
         </section>
     </section>
